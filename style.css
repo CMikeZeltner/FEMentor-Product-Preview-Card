@@ -1,0 +1,161 @@
+body{
+background-color: hsl(30, 38%, 92%);
+font-family: 'Montserrat';
+color: hsl(228, 12%, 48%);
+font-size: 14px;
+}
+
+#perfume-image-desktop{
+    display: none;
+}
+
+#perfume-image-mobile{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#main-card-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem 1rem 1rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+
+#perfume{
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#perfume-title{
+    font-family: 'Fraunces';
+    color: black;
+    font-size: 30px;
+    margin-bottom: .5rem;
+}
+
+#card-container{
+    margin: 1.5rem 1.5rem;
+}
+
+#perfume-title{
+    margin-bottom: 1rem;
+}
+
+p{
+    margin-bottom: 1.5rem;
+    line-height: 2;
+}
+
+.text-breaks{
+    display: block;
+};
+
+#prices{
+    display: block;
+    height: 100vh;
+    
+}
+span{
+    display: inline-block;
+}
+
+#sale-price{
+    display: inline-block;
+    font-family: 'Fraunces';
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    margin-right: .8rem;   
+    vertical-align: middle;
+}
+
+#retail-price{
+    text-decoration: line-through;
+    vertical-align: middle;
+}
+
+#button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+    
+button:hover{
+    background-color: hsl(158, 36%, 15%);
+}
+
+#cart-icon{
+    margin-right: .5rem;
+}
+
+
+@media (min-width: 700px){
+    
+    #perfume-image-mobile{
+        display: none;
+    }
+
+    #perfume-image-desktop{
+        display: block;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        max-height: 600px;
+        max-width: 300px;
+    }
+
+    #main-card-container{
+        flex-direction: row;
+        margin: 2rem auto 1rem auto;
+        max-width: 600px;
+        
+    }
+
+    #card-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #perfume{
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        margin-bottom: 2rem;
+    }
+
+    #prices{
+        margin-bottom: 1rem;
+    }
+
+    button{
+        margin-bottom: .5rem
+    }
+
+    .text-breaks{
+        display: inline
+    }
+
+    
+    
+}
+    
+
